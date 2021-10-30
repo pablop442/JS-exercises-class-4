@@ -1,7 +1,4 @@
 // crear una funcion que genere una escusa aleatoria con esos datos 
-// creeis otra funcion que cuente el numero de repeticiones de letras en cada array
-// suprimir repeticiones en un array y devolver el array sin la repeticion
-// function que invierta todos los valores de el array
 // normas
 // documentado
 // prohibido la programacion declarativa
@@ -15,15 +12,15 @@ let surnames = ["10", "juan", "@12", "null", "antonioPerezDelCarmen", "abcdefght
 let escuses = ["OMG?", "What’s going on?", "How much is it?", "18", null, undefined, function(){}];
 let names= ["Jeferson", "Matilda", "R@fael", "1van", "Pep3", "Loquesea", "Fel1berto", "Pepit@", "D@M"];
 
-const letterCount=(arr)=>{
+// // Ejercicio 1 crear una funcion que genere una escusa aleatoria con esos datos 
+const excuseGenerator=(who,what,wholastname)=>{
+    // Genera números de index random dentro del length de cada array 
+      let randomWho=  who[Math.floor(Math.random()*who.length)];
+       let randomWhat= what[Math.floor(Math.random()*what.length)];
+       let randomWhoLastname= wholastname[Math.floor(Math.random()*wholastname.length)];
 
-    for(let i=0; arr.length;i++){
-        let count = 0
-        if(arr[i] !== "string"){
-            count=0
-        }
-        else arr[i]
+        return randomWho + " " + randomWhoLastname + " could not make it because "+ randomWhat
     }
-}
-var result = letterCount(surnames);
-console.log(result);
+console.log(excuseGenerator(names, escuses, surnames))
+
+
