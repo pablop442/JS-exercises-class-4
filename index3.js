@@ -21,12 +21,13 @@ const noRepeat=(arr)=>{
                 obj[key]=1                                                          //Si solo la ve una vez al menos, será 1
             }
         }
-        for(let k in obj) {                                                     // recorre todo el obj buscando las keys que sean >1 y las incluye en nuevo array
-            if(obj[k] > 1) {
-                array.push(k)
-            }
-        }
+
     
+    }
+    for(let k in obj) {                                                     // recorre todo el obj buscando las keys que sean = 1 y las incluye en nuevo array
+        if(obj[k] === 1) {
+            array.push(k)
+        }
     }
     return array
 }    

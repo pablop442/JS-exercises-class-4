@@ -14,7 +14,7 @@ let names= ["Jeferson", "Matilda", "R@fael", "1van", "Pep3", "Loquesea", "Fel1be
 
 // // Ejercicio 1 crear una funcion que genere una escusa aleatoria con esos datos 
 const excuseGenerator=(who,what,wholastname)=>{
-    // Genera números de index random dentro del length de cada array 
+                                                                                                // Genera números de index random dentro del length de cada array 
       let randomWho=  who[Math.floor(Math.random()*who.length)];
        let randomWhat= what[Math.floor(Math.random()*what.length)];
        let randomWhoLastname= wholastname[Math.floor(Math.random()*wholastname.length)];
