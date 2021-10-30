@@ -19,8 +19,8 @@ const excuseGenerator=(who,what,wholastname)=>{
        let randomWhat= what[Math.floor(Math.random()*what.length)];
        let randomWhoLastname= wholastname[Math.floor(Math.random()*wholastname.length)];
 
-        return randomWho + " " + randomWhoLastname + " could not make it because "+ randomWhat
+        return randomWho + " " + randomWhoLastname + " could not make it because "+ randomWhat;
     }
-console.log(excuseGenerator(names, escuses, surnames))
+console.log(excuseGenerator(names, escuses, surnames));
 
 

@@ -6,16 +6,16 @@ let names= ["Jeferson", "Matilda", "R@fael", "1van", "Pep3", "Loquesea", "Fel1be
 
 // Ejercicio 4
  const reverseArr=(arr)=>{
-     let reversedArray =[]                                              //declaro array vacía que la llenaré con nuevo orden
-     for(let i = arr.length-1; i >= 0; i--){       
+     let reversedArray =[];                                              //declaro array vacía que la llenaré con nuevo orden
+     for(let i = arr.length - 1; i >= 0; i--){       
         if( typeof arr[i] !== "string"){                                // Si no es un string que devuelva cero           
-            arr[i]=0
+            arr[i]=0;
             }                                                           //itero sobre los elementos del array desde el último hasta el primero
-          for (let j = arr[i].length-1; j >= 0; j--){                   // itero sobre los strings desde el último hasta el primero
-            reversedArray += arr[i][j]                                  //agrego elemento en orden contrario al nuevo array
+          for (let j = arr[i].length - 1; j >= 0; j--){                   // itero sobre los strings desde el último hasta el primero
+            reversedArray += arr[i][j];                                  //agrego elemento en orden contrario al nuevo array
           };
      };
-     return reversedArray
+     return reversedArray;
  };
 
- console.log(reverseArr(escuses))
+ console.log(reverseArr(escuses));

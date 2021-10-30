@@ -7,18 +7,18 @@ let names= ["Jeferson", "Matilda", "R@fael", "1van", "Pep3", "Loquesea", "Fel1be
 
 
 const letterCount=(arr)=>{
-    let obj = {}                                                     // creo un objeto para almacenar las letras de los string en keys.
-    for(let i=0; i<arr.length-1;i++){                                 // Recorre todo el array
+    let obj = {};                                                     // creo un objeto para almacenar las letras de los string en keys.
+    for(let i = 0; i < arr.length-1; i++){                                 // Recorre todo el array
          if( typeof arr[i] !== "string"){                            // Si no es un string que devuelva cero           
-                 arr[i]=0
-                 }                                                      
-        for(let j=0; j<arr[i].length-1; j++){ 
-            let key = arr[i][j]                                       // Recorre cada elemento del array
+                 arr[i]=0;
+                 };                                                      
+        for(let j = 0; j <arr[i].length - 1; j++){ 
+            let key = arr[i][j];                                       // Recorre cada elemento del array
             if(obj[key]){                                            // Si cada valor del obj es verdadero quiero que sume 1 cada vez que lo vea. 
-                obj[key]=obj[key]+1
+                obj[key]=obj[key]+1;
             } 
             else {                                                  // por defecto inicio cada valor en 1
-                obj[key]=1
+                obj[key]=1;
             };
         };     
     };
